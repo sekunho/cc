@@ -1,0 +1,3 @@
+*.js
+.elixir_ls/
+**/*.beam
