@@ -27,20 +27,9 @@ If you prefer to manually install the dependencies, here are the versions of the
 
 - NodeJS `v14.17.0`
 - Typescript `4.3.2`
-- Elixir `1.12.1`
-- Erlang/OTP `24`
-
 
 ## Run
 
-### Typescript
-
 ```bash
-nix-shell --run "tsc transform.ts && node transform.js"
-```
-
-### Elixir
-
-```bash
-nix-shell --run "elixirc transform.ex && elixir -e Transform.run"
+nix-shell --run "tsc *.ts --target es2016 && node transform.js"
 ```
